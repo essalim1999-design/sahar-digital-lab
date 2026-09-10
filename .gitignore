@@ -1,0 +1,8 @@
+# أدوات التطوير — لا تُرفع
+node_modules/
+package-lock.json
+.DS_Store
+Thumbs.db
+
+# نسخ احتياطية من الصور الأصلية (كبيرة، غير مستخدمة في الموقع)
+assets/images/_original/

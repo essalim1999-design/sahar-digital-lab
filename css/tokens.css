@@ -1,0 +1,70 @@
+/* =========================================================
+   DESIGN TOKENS
+   ملف إنجاز سحر — نظام تصميم موحّد
+   Editorial + Technical Drawing (warm paper)
+========================================================= */
+
+:root {
+
+  /* ---- الورق / الأسطح ---- */
+  --paper:        #f4f0e6;
+  --paper-rgb:    244 240 230;   /* نفس --paper لطبقات الشفافية */
+  --paper-deep:   #ece5d6;
+  --paper-panel:  #f8f5ee;
+
+  /* ---- الحبر / النص ---- */
+  --ink:          #24221d;
+  --ink-soft:     #5f5b54;
+  --ink-faint:    #8f8a7f;
+
+  /* ---- خطوط الرسم الهندسي ---- */
+  --line:         #46423b;   /* خط رئيسي   */
+  --line-mid:     #8a877f;   /* خط ثانوي   */
+  --line-faint:   #b8b3a6;   /* إنشائي خافت */
+
+  /* ---- الشبكة ---- */
+  --grid-line:    rgba(36, 34, 29, 0.055);
+  --grid-strong:  rgba(36, 34, 29, 0.10);
+
+  /* ---- لون التحديد (قلم المراجعة الأحمر) ---- */
+  --accent:       #b0432c;
+  --accent-soft:  rgba(176, 67, 44, 0.12);
+
+  /* ---- لوحة ألوان مكتومة (طبعة حجرية علمية) ---- */
+  --c-blue:       #3c5a73;   /* أزرق بروسي   */
+  --c-ink-blue:   #2d5f81;   /* حبر رسم الباحث (القسم 4) */
+  --c-steel-blue: #35586f;   /* حبر نقش البكرات (القسم 5) */
+  --c-teal:       #3f7c6f;   /* أخضر مزرقّ    */
+  --c-ochre:      #a9832f;   /* أصفر ترابي    */
+  --c-rust:       #b0563c;   /* طوبي          */
+  --c-plum:       #7a4a63;   /* برقوقي خافت   */
+
+  /* ---- الهندسة / المسافات ---- */
+  --unit:         8px;
+  --module:       40px;                       /* وحدة شبكة الرسم */
+  --sheet-pad:    clamp(20px, 4.5vw, 64px);
+  --hairline:     1px;
+  --maxw:         1500px;
+
+  /* ---- الطباعة ---- */
+  --font-ar:      "Noto Naskh Arabic", "Segoe UI", system-ui, serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --fs-label:     clamp(9px, 0.72vw, 10.5px);  /* تسميات mono */
+  --fs-body:      clamp(14px, 1.05vw, 15.5px);
+  --fs-lead:      clamp(16px, 1.5vw, 19px);
+  --fs-h2:        clamp(2.6rem, 6vw, 5.5rem);
+  --fs-h1:        clamp(3rem, 6.5vw, 6.5rem);
+
+  --track-label:  0.22em;   /* تباعد أحرف التسميات */
+
+  /* ---- الحركة ---- */
+  --ease-draw:    cubic-bezier(0.65, 0, 0.35, 1);
+  --dur:          0.6s;
+}
+
+
+/* تقليل الحركة لمن يفضّل ذلك */
+@media (prefers-reduced-motion: reduce) {
+  :root { --dur: 0.001s; }
+}

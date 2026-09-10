@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f0e6">
+  <meta name="color-scheme" content="light">
+
+  <title>ملف الإنجاز الرقمي · أ. سحر القرني</title>
+  <meta name="description" content="ملف الإنجاز الرقمي للأستاذة سحر القرني، معلمة العلوم والفيزياء — رحلة مهنية توثّق الرؤية والرسالة والقيم، ورؤية التعليم في المملكة، وأخلاقيات مهنة التعليم، وشواهد الأداء.">
+  <meta name="author" content="سحر القرني">
+
+  <!-- معاينة المشاركة (واتساب · تليجرام · تويتر) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ملف الإنجاز الرقمي · أ. سحر القرني">
+  <meta property="og:description" content="رحلة رقمية توثّق التعليم والتطوير والإنجاز المهني — معلمة العلوم والفيزياء.">
+  <meta property="og:locale" content="ar_SA">
+  <!-- بعد الرفع على GitHub Pages بدّل هذا برابط كامل: https://<user>.github.io/<repo>/assets/og-cover.png -->
+  <meta property="og:image" content="assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ملف الإنجاز الرقمي للأستاذة سحر القرني">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/og-cover.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%2324221d' stroke-width='1.7'%3E%3Cellipse cx='16' cy='16' rx='14' ry='6'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' transform='rotate(60 16 16)'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='6' transform='rotate(120 16 16)'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='3' fill='%23b0432c'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="paper-grid">
+
+  <!-- مرشّحات ورموز عامة (خط اليد + شخبطات علمية) -->
+  <svg width="0" height="0" class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="rough" x="-4%" y="-4%" width="108%" height="108%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.006" numOctaves="1" seed="5" result="n" />
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+      <filter id="rough-fine" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="1" seed="9" result="n" />
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="1.3" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+
+      <!-- شخبطات: ذرّة · موجة · شرارة -->
+      <g id="doodle-atom">
+        <ellipse cx="0" cy="0" rx="22" ry="8" />
+        <ellipse cx="0" cy="0" rx="22" ry="8" transform="rotate(60)" />
+        <ellipse cx="0" cy="0" rx="22" ry="8" transform="rotate(120)" />
+        <circle cx="0" cy="0" r="2.6" class="fill" />
+      </g>
+      <path id="doodle-wave" d="M0 8 Q6 -6 12 8 T24 8 T36 8" />
+      <path id="doodle-spark" d="M0 -10 L2.4 -2.4 L10 0 L2.4 2.4 L0 10 L-2.4 2.4 L-10 0 L-2.4 -2.4 Z" class="fill" />
+      <path id="doodle-orbit" d="M2 30 A34 34 0 0 1 58 6" />
+    </defs>
+  </svg>
+
+  <!-- إطار اللوحة الثابت -->
+  <div class="sheet-frame" aria-hidden="true"></div>
+
+
+  <!-- ===================================================
+       المسطرة الجانبية — تقدّم القراءة عبر الأقسام
+  ==================================================== -->
+  <div class="spine" aria-hidden="true">
+    <span class="spine__ticks"></span>
+    <span class="spine__axis"></span>
+    <span class="spine__progress" id="spineProgress"></span>
+    <span class="spine__cursor" id="spineCursor" data-label="01"></span>
+    <span class="spine__marks" id="spineMarks"></span>
+  </div>
+
+
+  <!-- ===================================================
+       TITLE BLOCK — كارتوش ثابت
+  ==================================================== -->
+  <div class="titleblock" aria-hidden="true">
+    <div><b>SAHAR</b> · DIGITAL PORTFOLIO</div>
+    <div>SHEET <b id="tbSheet">01</b> / 06</div>
+    <div>SCALE 1:1 · 2026</div>
+  </div>
+
+
+  <!-- ===================================================
+       EXP. 01 — الغلاف
+  ==================================================== -->
+  <section class="hero" id="s1" data-station="1">
+
+    <div class="hero-corner hero-corner--tl">DIGITAL PORTFOLIO — 2026</div>
+    <div class="hero-corner hero-corner--tr">EXP / 01</div>
+
+    <div class="hero-content">
+      <div class="hero-stage">
+
+        <svg class="hero-atom" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-label="رسم نموذج ذرّي: نواة ومدارات وإلكترونات.">
+
+          <defs>
+            <filter id="sketch" x="-6%" y="-6%" width="112%" height="112%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="2" seed="6" result="n" />
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+            <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(34)">
+              <rect width="7" height="7" fill="var(--paper-panel)" />
+              <line x1="0" y1="0" x2="0" y2="7" stroke="var(--line-mid)" stroke-width="0.8" opacity="0.5" />
+            </pattern>
+          </defs>
+
+          <!-- خطوط إنشائية -->
+          <g class="ha-construction">
+            <circle cx="450" cy="450" r="410" class="ha-const draw draw-const" />
+            <line x1="18" y1="450" x2="882" y2="450" class="ha-const ha-const--dash draw draw-const" />
+            <line x1="450" y1="18" x2="450" y2="882" class="ha-const ha-const--dash draw draw-const" />
+            <line x1="450" y1="450" x2="797" y2="233" class="ha-const draw draw-const" />
+
+            <!-- علامات قياس على الدائرة -->
+            <line x1="450" y1="40"  x2="450" y2="60"  class="ha-tick" />
+            <line x1="450" y1="840" x2="450" y2="860" class="ha-tick" />
+            <line x1="40"  y1="450" x2="60"  y2="450" class="ha-tick" />
+            <line x1="840" y1="450" x2="860" y2="450" class="ha-tick" />
+
+            <!-- زاوية -->
+            <path d="M 528 450 A 78 78 0 0 0 515 407" class="ha-const draw draw-const" />
+          </g>
+
+          <!-- المدارات (تُرسم مع الظهور) -->
+          <g class="ha-orbits" filter="url(#sketch)">
+            <ellipse cx="450" cy="450" rx="395" ry="150" class="ha-orbit ha-orbit--blue  draw draw-orbit" transform="rotate(0 450 450)" />
+            <ellipse cx="450" cy="450" rx="395" ry="150" class="ha-orbit ha-orbit--teal  draw draw-orbit" transform="rotate(60 450 450)" />
+            <ellipse cx="450" cy="450" rx="395" ry="150" class="ha-orbit ha-orbit--rust  draw draw-orbit" transform="rotate(120 450 450)" />
+          </g>
+
+          <!-- النواة -->
+          <g class="ha-nucleus" filter="url(#sketch)">
+            <circle cx="450" cy="450" r="40" class="ha-core" />
+            <circle cx="435" cy="442" r="19" class="fill-hatch" />
+            <circle cx="465" cy="446" r="19" class="fill-hatch" />
+            <circle cx="450" cy="467" r="19" class="fill-hatch" />
+            <circle cx="450" cy="450" r="37" class="ha-core-ring" />
+          </g>
+
+          <!-- الإلكترونات (يحرّكها JS) -->
+          <g class="ha-electron ha-electron--blue"><circle cx="845" cy="450" r="11" class="ink-solid" /></g>
+          <g class="ha-electron ha-electron--teal"><circle cx="845" cy="450" r="11" class="ink-solid" /></g>
+          <g class="ha-electron ha-electron--rust"><circle cx="845" cy="450" r="11" class="ink-solid" /></g>
+
+          <!-- شرح مقتضب -->
+          <g class="ha-anno">
+            <text x="742" y="250" class="ha-anno">R = 1</text>
+            <text x="470" y="742" class="ha-anno">FIG. 01 · ATOM</text>
+          </g>
+        </svg>
+
+        <div class="hero-title">
+          <h1>
+            <span class="band band--sm">ملف الإنجاز الرقمي للأستاذة</span>
+            <span class="band band--lg">سحر القرني</span>
+          </h1>
+          <p class="hero-note"><span>رحلة رقمية توثّق التعليم، التطوير، والإنجاز المهني.</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-footer">
+      <span>ATOMIC MODEL · BOHR</span>
+      <span>SCROLL TO EXPLORE ↓</span>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXP. 02 — الرؤية · الرسالة · القيم
+  ==================================================== -->
+  <section class="chapter chapter--s2" id="s2" data-station="2">
+    <div class="chapter-head">
+      <span class="part-bubble">02</span>
+      <span class="tech-label">VISION · MISSION · VALUES</span>
+      <span class="rule"></span>
+      <span class="tech-label">02 / 06</span>
+    </div>
+
+    <div class="s2-wrap">
+      
+
+      <div class="frames">
+
+        <div class="frame frame--blue" data-open="true">
+          <button class="frame__bar" aria-expanded="true" aria-controls="s2d1">
+            <span class="frame__ghost" aria-hidden="true">01</span>
+            <svg class="frame__glyph" viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M3 20 Q20 5 37 20 Q20 35 3 20 Z" />
+              <circle cx="20" cy="20" r="7" />
+              <circle cx="20" cy="20" r="2.4" fill="currentColor" />
+              <path d="M20 3 V7 M20 33 V37 M6 8 L9 11 M34 8 L31 11" />
+            </svg>
+            <span class="frame__label">الرؤية</span>
+            <span class="frame__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="frame__detail" id="s2d1" role="region" aria-label="الرؤية">
+            <div class="frame__detail-inner">
+              <p>تحقيق التميّز والريادة وخدمة المجتمع في إطارٍ من القيم الإسلامية، وبما يُسهم في تحقيق التنمية المستدامة.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame frame--teal">
+          <button class="frame__bar" aria-expanded="false" aria-controls="s2d2">
+            <span class="frame__ghost" aria-hidden="true">02</span>
+            <svg class="frame__glyph" viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="4" y="9" width="32" height="23" rx="2" />
+              <path d="M5 11 L20 23 L35 11" />
+              <path d="M5 30 L15 20 M35 30 L25 20" />
+            </svg>
+            <span class="frame__label">الرسالة</span>
+            <span class="frame__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="frame__detail" id="s2d2" role="region" aria-label="الرسالة">
+            <div class="frame__detail-inner">
+              <p>توفير بيئة تعلّمٍ آمنة وفرصٍ متكافئة للمتعلمين؛ للحصول على تعليمٍ متميّز يمكّنهم من التفكير العلمي، وامتلاك المهارات والقيم اللازمة؛ ليكونوا مواطنين فاعلين ومساهمين في تطوير المجتمع.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame frame--rust">
+          <button class="frame__bar" aria-expanded="false" aria-controls="s2d3">
+            <span class="frame__ghost" aria-hidden="true">03</span>
+            <svg class="frame__glyph" viewBox="0 0 40 40" aria-hidden="true">
+              <path d="M12 5 H28 L36 15 L20 35 L4 15 Z" />
+              <path d="M4 15 H36" />
+              <path d="M12 5 L16 15 L20 35 M28 5 L24 15 L20 35 M16 15 H24" />
+            </svg>
+            <span class="frame__label">القيم</span>
+            <span class="frame__toggle" aria-hidden="true">+</span>
+          </button>
+          <div class="frame__detail" id="s2d3" role="region" aria-label="القيم">
+            <div class="frame__detail-inner">
+              <ul>
+                <li data-n="01">الإيمان بالله تعالى والالتزام بعقيدة الأمة.</li>
+                <li data-n="02">الالتزام بروح الفريق الواحد.</li>
+                <li data-n="03">الابتكار والتحسين المستمر.</li>
+                <li data-n="04">التنافس في صناعة التعليم والالتزام بمعايير التميّز.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXP. 03 — الفلسفة التعليمية
+  ==================================================== -->
+  <section class="chapter chapter--s3" id="s3" data-station="3">
+    <div class="chapter-head">
+      <span class="part-bubble">03</span>
+      <span class="tech-label">NATIONAL EDUCATION VISION</span>
+      <span class="rule"></span>
+      <span class="tech-label">03 / 06</span>
+    </div>
+
+    <div class="s3-wrap">
+
+      <header class="s3-masthead">
+        <img class="s3-emblem" src="assets/images/vision.png" width="440" height="440"
+             loading="lazy" decoding="async"
+             alt="شعار المملكة العربية السعودية — نخلة وسيفان" />
+        <h2 class="s3-title">رؤية التعليم في <span>المملكة العربية السعودية</span></h2>
+      </header>
+
+      <div class="s3-stage">
+
+        <figure class="s3-tetra">
+          <svg id="tetra" viewBox="-160 -160 320 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g class="tetra-edges"></g>
+            <g class="tetra-verts"></g>
+            <g class="tetra-labels"></g>
+          </svg>
+        </figure>
+
+        <div class="s3-node s3-node--tr s3-node--lg">
+          <span class="s3-pn">01</span>
+          <h3>رفع مستوى التحصيل العلمي</h3>
+          <p>تسعى الرؤية إلى رفع مستوى التحصيل العلمي لدى الطلاب من خلال تحسين جودة التعليم وتوفير بيئةٍ تعليميةٍ محفّزة.</p>
+        </div>
+
+        <div class="s3-node s3-node--tl s3-node--sm">
+          <span class="s3-pn">02</span>
+          <h3>تعزيز الابتكار والإبداع في التعليم</h3>
+          <p>تهدف الرؤية إلى خلق بيئةٍ تعليميةٍ تشجّع على الابتكار والإبداع، عبر تعزيز الأنشطة العلمية والفنية، وتشجيع الطلاب على التفكير خارج الصندوق.</p>
+        </div>
+
+        <div class="s3-node s3-node--b">
+          <span class="s3-pn">03</span>
+          <h3>تطوير المهارات العلمية للطلاب</h3>
+          <p>تركّز رؤية 2030 على تطوير المهارات العلمية للطلاب من خلال التعليم المهني والتقني، إضافةً إلى تعزيز البرامج التدريبية والتطبيقية في المناهج الدراسية.</p>
+        </div>
+
+      </div>
+
+      <div class="s3-targets">
+        <div class="s3-marquee" aria-label="أهداف رؤية التعليم">
+          <div class="s3-marquee__track">
+            <span class="s3-mq-item">تعزيز القيم والانتماء الوطني</span>
+            <span class="s3-mq-item">تطوير نظام التعليم</span>
+            <span class="s3-mq-item">تنمية وتطوير قدرات الكوادر التعليمية</span>
+            <span class="s3-mq-item">تعزيز فرص التعلّم مدى الحياة</span>
+            <span class="s3-mq-item">رفع جودة الابتكار</span>
+            <span class="s3-mq-item" aria-hidden="true">تعزيز القيم والانتماء الوطني</span>
+            <span class="s3-mq-item" aria-hidden="true">تطوير نظام التعليم</span>
+            <span class="s3-mq-item" aria-hidden="true">تنمية وتطوير قدرات الكوادر التعليمية</span>
+            <span class="s3-mq-item" aria-hidden="true">تعزيز فرص التعلّم مدى الحياة</span>
+            <span class="s3-mq-item" aria-hidden="true">رفع جودة الابتكار</span>
+            <span class="s3-mq-item" aria-hidden="true">تعزيز القيم والانتماء الوطني</span>
+            <span class="s3-mq-item" aria-hidden="true">تطوير نظام التعليم</span>
+            <span class="s3-mq-item" aria-hidden="true">تنمية وتطوير قدرات الكوادر التعليمية</span>
+            <span class="s3-mq-item" aria-hidden="true">تعزيز فرص التعلّم مدى الحياة</span>
+            <span class="s3-mq-item" aria-hidden="true">رفع جودة الابتكار</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXP. 04 — المهارات والكفايات
+  ==================================================== -->
+  <section class="chapter chapter--s4" id="s4" data-station="4">
+    <div class="chapter-head">
+      <span class="part-bubble">04</span>
+      <span class="tech-label">TEACHING ETHICS CHARTER</span>
+      <span class="rule"></span>
+      <span class="tech-label">04 / 06</span>
+    </div>
+
+    <div class="s4-wrap">
+
+      <header class="s4-head">
+        <h2>أخلاقيات مهنة التعليم</h2>
+        <p class="s4-sub">ميثاقٌ يوجّه فكر المعلّم وسلوكه — أمام الله، ثم ولاة الأمر، ثم نفسه والآخرين.</p>
+      </header>
+
+      <div class="s4-charter">
+
+        <nav class="s4-tabs" role="tablist" aria-label="محاور الميثاق">
+          <button class="s4-tab is-active" role="tab" aria-selected="true" data-panel="s4p1">
+            <span class="s4-tab__n">01</span><span class="s4-tab__t">الميثاق وأخلاقيات المهنة</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p2">
+            <span class="s4-tab__n">02</span><span class="s4-tab__t">أهداف الميثاق</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p3">
+            <span class="s4-tab__n">03</span><span class="s4-tab__t">رسالة التعليم</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p4">
+            <span class="s4-tab__n">04</span><span class="s4-tab__t">المعلّم وأداؤه المهني</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p5">
+            <span class="s4-tab__n">05</span><span class="s4-tab__t">المعلّم وطلابه</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p6">
+            <span class="s4-tab__n">06</span><span class="s4-tab__t">المعلّم والمجتمع</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p7">
+            <span class="s4-tab__n">07</span><span class="s4-tab__t">المعلّم والمجتمع المدرسي</span>
+          </button>
+          <button class="s4-tab" role="tab" aria-selected="false" data-panel="s4p8">
+            <span class="s4-tab__n">08</span><span class="s4-tab__t">المعلّم والأسرة</span>
+          </button>
+        </nav>
+
+        <div class="s4-panels">
+          <article class="s4-panel is-active" id="s4p1" role="tabpanel">
+            <span class="s4-panel__n">01</span>
+            <h3>الميثاق وأخلاقيات مهنة التعليم</h3>
+            <p>السجايا الحميدة والسلوكيات الفاضلة التي يتعيَّن أن يتحلى بها العاملون في حقل التعليم العام فكراً وسلوكاً أمام الله ثم أمام ولاة الأمر وأمام أنفسهم والآخرين، وتُرتَّب عليهم واجبات أخلاقية.</p>
+          </article>
+          <article class="s4-panel" id="s4p2" role="tabpanel">
+            <span class="s4-panel__n">02</span>
+            <h3>أهداف الميثاق</h3>
+            <p>تعزيز انتماء المعلّم لرسالته ومهنته، والارتقاء بمكانته العلمية والاجتماعية، وترسيخ قيم المهنة وأخلاقياتها بما يسهم في بناء المجتمع وتقدّمه.</p>
+          </article>
+          <article class="s4-panel" id="s4p3" role="tabpanel">
+            <span class="s4-panel__n">03</span>
+            <h3>رسالة التعليم</h3>
+            <p>التعليم رسالة سامية تستمدّ أخلاقياتها من مبادئ الشريعة والحضارة، وتقوم على الإخلاص والصدق والعطاء المستمر ونشر العلم، مع اعتزاز المعلّم بمهنته والمحافظة على شرفها.</p>
+          </article>
+          <article class="s4-panel" id="s4p4" role="tabpanel">
+            <span class="s4-panel__n">04</span>
+            <h3>المعلّم وأداؤه المهني</h3>
+            <p>يلتزم المعلّم بالقيم والأخلاق الحميدة، ويحرص على تطوير معارفه ومهاراته باستمرار، ويتّصف بالصدق والأمانة والانضباط والتسامح، ويكون قدوةً في سلوكه، ويسهم في تعزيز المواطنة والاعتدال والتعايش.</p>
+          </article>
+          <article class="s4-panel" id="s4p5" role="tabpanel">
+            <span class="s4-panel__n">05</span>
+            <h3>المعلّم وطلابه</h3>
+            <p>تقوم علاقته بطلابه على الرحمة والعدل والاحترام، ويحرص على تعليمهم وتوجيههم وصون كرامتهم وتنمية شخصياتهم ومهاراتهم، ويشجّع التفكير الناقد والتعلّم الذاتي والحوار البنّاء، بعيدًا عن العنف والعقاب البدني والنفسي.</p>
+          </article>
+          <article class="s4-panel" id="s4p6" role="tabpanel">
+            <span class="s4-panel__n">06</span>
+            <h3>المعلّم والمجتمع</h3>
+            <p>يعزّز الانتماء للدين والوطن والتفاعل الإيجابي مع الآخرين، ويحافظ على ثقة المجتمع ومكانة مهنته، ويسهم بعلمه وثقافته وفكره في تقدّم المجتمع وبناء أجياله.</p>
+          </article>
+          <article class="s4-panel" id="s4p7" role="tabpanel">
+            <span class="s4-panel__n">07</span>
+            <h3>المعلّم والمجتمع المدرسي</h3>
+            <p>يبني علاقته بزملائه وإدارة المدرسة على الثقة والاحترام والعمل بروح الفريق، ويلتزم بالأنظمة والتعليمات، ويشارك بإيجابية في أنشطة المدرسة وفعالياتها.</p>
+          </article>
+          <article class="s4-panel" id="s4p8" role="tabpanel">
+            <span class="s4-panel__n">08</span>
+            <h3>المعلّم والأسرة</h3>
+            <p>يُعدّ شريكًا للأسرة في التربية والتعليم، ويحرص على تعزيز التواصل والثقة بين البيت والمدرسة، والتشاور فيما يخدم مصلحة الطالب ومسيرته التعليمية.</p>
+          </article>
+        </div>
+
+        <figure class="s4-figure" aria-hidden="true">
+          <img src="assets/images/teaching-ethics.svg" alt="" loading="lazy" decoding="async" />
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXP. 05 — شواهد الأداء (11 بطاقة)
+       أدرج رابط ملف قوقل درايف لكل بطاقة في href
+  ==================================================== -->
+  <section class="chapter chapter--s5" id="s5" data-station="5">
+    <div class="chapter-head">
+      <span class="part-bubble">05</span>
+      <span class="tech-label">PERFORMANCE EVIDENCE</span>
+      <span class="rule"></span>
+      <span class="tech-label">05 / 06</span>
+    </div>
+
+    <div class="s5-wrap">
+      <div class="sci-doodles" aria-hidden="true">
+        <svg class="dd dd--1" viewBox="-30 -30 60 60"><use href="#doodle-atom"/></svg>
+        <svg class="dd dd--2" viewBox="0 0 40 20"><use href="#doodle-wave"/></svg>
+        <svg class="dd dd--3" viewBox="-12 -12 24 24"><use href="#doodle-spark"/></svg>
+        <svg class="dd dd--4" viewBox="0 0 62 36"><use href="#doodle-orbit"/></svg>
+        <svg class="dd dd--5" viewBox="-12 -12 24 24"><use href="#doodle-spark"/></svg>
+      </div>
+
+      <header class="s5-head">
+        <h2>شواهد الأداء</h2>
+        <img class="s5-fig" src="assets/images/physics.png" width="760" height="760"
+             loading="lazy" decoding="async"
+             alt="نقش هندسي لنظام بكرات وأثقال" />
+      </header>
+
+      <div class="s5-grid">
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1cBImTZsdp10aqbS1xn8J_DKIGMu7KNb5?usp=sharing" target="_blank" rel="noopener" data-el="1">
+          <span class="ev-card__ghost" aria-hidden="true">01</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="16" rx="1.5"/><path d="M9 4V3h6v1"/><path d="M9 12l2 2 4-5"/></svg></span>
+          <h3 class="ev-card__t">أداء الواجبات الوظيفية</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1Vy7S0u-7h2HGViy3N9QbFLu_JCcnt7G_?usp=drive_link" target="_blank" rel="noopener" data-el="2">
+          <span class="ev-card__ghost" aria-hidden="true">02</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="16" cy="10" r="2.4"/><path d="M4 19c0-2.8 2.2-5 5-5s5 2.2 5 5"/><path d="M14 19c.2-2 1.7-3.4 3.6-3.4"/></svg></span>
+          <h3 class="ev-card__t">التفاعل مع المجتمع المهني</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/18UHoZNVoTKZ8HcrIlUkdgCqM-H5YZPTY?usp=drive_link" target="_blank" rel="noopener" data-el="3">
+          <span class="ev-card__ghost" aria-hidden="true">03</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M12 18c-2-1.4-3-2.6-3-4a1.8 1.8 0 0 1 3-1 1.8 1.8 0 0 1 3 1c0 1.4-1 2.6-3 4z"/></svg></span>
+          <h3 class="ev-card__t">التفاعل مع أولياء الأمور</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1oPYdtMEwSWC4khFm1A0w4RNe7qRnOI8K?usp=sharing" target="_blank" rel="noopener" data-el="4">
+          <span class="ev-card__ghost" aria-hidden="true">04</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.8"/><circle cx="19" cy="6" r="1.8"/><circle cx="19" cy="18" r="1.8"/><path d="M6.8 12H10c4 0 3.5-6 7.5-6"/><path d="M10 12c4 0 3.5 6 7.5 6"/></svg></span>
+          <h3 class="ev-card__t">التنويع في استراتيجيات التدريس</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/126jT6EwDqfs2C8RmM4n9ZmmstqWA2m-1?usp=drive_link" target="_blank" rel="noopener" data-el="5">
+          <span class="ev-card__ghost" aria-hidden="true">05</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M7 16l4-4 3 2 5-7"/><path d="M17 7h3v3"/></svg></span>
+          <h3 class="ev-card__t">تحسين نتائج المتعلمين</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/12mcpzBMpuRT596xHQ_QjFdKRT3Bd_bgm?usp=drive_link" target="_blank" rel="noopener" data-el="6">
+          <span class="ev-card__ghost" aria-hidden="true">06</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg></span>
+          <h3 class="ev-card__t">إعداد وتنفيذ خطة التعلم</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1m3w4VyUEkzBit9BaR9yiufz9nxYjZm5C?usp=drive_link" target="_blank" rel="noopener" data-el="7">
+          <span class="ev-card__ghost" aria-hidden="true">07</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="1.5"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
+          <h3 class="ev-card__t">توظيف تقنيات ووسائل التعلم المناسبة</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1M9Q79AvPSnBUs48XbqxXqczqGQHVL1Vw?usp=drive_link" target="_blank" rel="noopener" data-el="8">
+          <span class="ev-card__ghost" aria-hidden="true">08</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20v-6"/><path d="M12 14c-3.3 0-5-2.2-5-5 3.3 0 5 2.2 5 5z"/><path d="M12 12c2.7 0 4-1.7 4-4-2.7 0-4 1.7-4 4z"/><path d="M6 20h12"/></svg></span>
+          <h3 class="ev-card__t">تهيئة البيئة التعليمية</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1wmzZ-5JjIsoxqP9ib0I2AX0JWmMK9hEW?usp=drive_link" target="_blank" rel="noopener" data-el="9">
+          <span class="ev-card__ghost" aria-hidden="true">09</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg></span>
+          <h3 class="ev-card__t">الإدارة الصفية</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">5%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/17Httb_n9XA9-wFD1Wq_22Qhq_LKCuIox?usp=drive_link" target="_blank" rel="noopener" data-el="10">
+          <span class="ev-card__ghost" aria-hidden="true">10</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M15.5 15.5L20 20"/><path d="M9 13V9"/><path d="M11.5 13v-2"/><path d="M14 13V8"/></svg></span>
+          <h3 class="ev-card__t">تحليل نتائج المتعلمين وتشخيص مستوياتهم</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">5%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+        <a class="ev-card reveal" href="https://drive.google.com/drive/folders/1c02F19ofCas1fRv4uqC33XP2DWBvKZG3?usp=drive_link" target="_blank" rel="noopener" data-el="11">
+          <span class="ev-card__ghost" aria-hidden="true">11</span>
+          <span class="ev-card__ico"><svg class="sk-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M7.5 9l1.5 1.5L12 8"/><path d="M14 9h3"/><path d="M7.5 15l1.5 1.5L12 14"/><path d="M14 15h3"/></svg></span>
+          <h3 class="ev-card__t">تنوع أساليب التقويم</h3>
+          <div class="ev-card__foot"><span class="ev-card__w">10%</span><span class="ev-card__go">عرض الشواهد <span aria-hidden="true">↗</span></span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================================================
+       EXP. 06 — الخاتمة + نموذج التقييم التفاعلي
+  ==================================================== -->
+  <section class="chapter chapter--s6" id="s6" data-station="6">
+    <div class="chapter-head">
+      <span class="part-bubble">06</span>
+      <span class="tech-label">CLOSING &amp; EVALUATION</span>
+      <span class="rule"></span>
+      <span class="tech-label">06 / 06</span>
+    </div>
+
+    <div class="s6-wrap">
+      <div class="sci-doodles" aria-hidden="true">
+        <svg class="dd dd--1" viewBox="-30 -30 60 60"><use href="#doodle-atom"/></svg>
+        <svg class="dd dd--2" viewBox="0 0 40 20"><use href="#doodle-wave"/></svg>
+        <svg class="dd dd--3" viewBox="-12 -12 24 24"><use href="#doodle-spark"/></svg>
+        <svg class="dd dd--4" viewBox="0 0 62 36"><use href="#doodle-orbit"/></svg>
+        <svg class="dd dd--5" viewBox="-12 -12 24 24"><use href="#doodle-spark"/></svg>
+      </div>
+
+      <header class="s6-head">
+        <h2>ويبقى لرأيكم أثر يثريها</h2>
+        <div class="s6-closing">
+          <p>صُمم هذا الملف ليعكس تجربة تعليمية تتطور بالملاحظة والتعلّم المستمر، ويسعدني أن يكون تقييمكم وملاحظاتكم جزءًا من هذا التطور.</p>
+          <h3>شاركوني تقييمكم؛ فكل ملاحظة خطوة نحو تجربة تعليمية أفضل.</h3>
+        </div>
+      </header>
+
+      <div class="evalu" id="evalu">
+
+        <!-- نتيجة تقييم المشرفة — تظهر تلقائيًا بعد الحفظ -->
+        <div class="evalu-result" id="evaluResult" hidden></div>
+
+        <!-- نموذج التقييم -->
+        <form class="evalu-form" id="evaluForm" novalidate>
+          <div class="evalu-form__head">
+            <h3>نموذج تقييم أداء المعلم</h3>
+          </div>
+
+          <div class="evalu-rows" id="evaluRows"><!-- تُولَّد بالـ JS --></div>
+
+          <div class="evalu-foot">
+            <label class="evalu-field">
+              <span>اسم المشرفة</span>
+              <input type="text" id="evaluReviewer" name="reviewer" autocomplete="name" />
+            </label>
+            <div class="evalu-live">
+              <span>التقدير العام للأداء</span>
+              <strong id="evaluLive">—</strong>
+            </div>
+          </div>
+
+          <div class="evalu-actions">
+            <button type="submit" class="evalu-save" id="evaluSave">حفظ التقييم</button>
+            <button type="button" class="evalu-reset" id="evaluReset" hidden>مسح</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="colophon">
+    <a class="tech-label" href="https://wa.me/message/4I7K3YBCEGDDP1" target="_blank" rel="noopener">DRAWN BY ESRSS · DIGITAL PORTFOLIO · 2026</a>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
