@@ -115,13 +115,15 @@ function primePath(el) {
   const startElectrons = () => {
     if (electronsRunning) return;
     electronsRunning = true;
-    const spins = electrons.map((el, i) =>
-      gsap.fromTo(el,
-        { rotation: i * 60, svgOrigin: CENTER },
-        { rotation: i * 60 + 360, svgOrigin: CENTER,
+    const spins = electrons.map((el, i) => {
+      // توزيع مبدئي متساوٍ 0°/120°/240° (يظهر فورًا حتى لو المتصفح مخفي)
+      gsap.set(el, { rotation: i * 120, svgOrigin: CENTER });
+      return gsap.fromTo(el,
+        { rotation: i * 120, svgOrigin: CENTER },
+        { rotation: i * 120 + 360, svgOrigin: CENTER,
           duration: 5 + i * 2, ease: "none", repeat: -1 }
-      )
-    );
+      );
+    });
     ScrollTrigger.create({
       trigger: ".hero", start: "top top", end: "bottom top",
       onUpdate: (self) => spins.forEach((t) => t.timeScale(1 - self.progress * 0.9))
@@ -130,7 +132,8 @@ function primePath(el) {
 
   const revealAll = () => {
     gsap.set([...consts, ...orbits], { strokeDashoffset: 0 });
-    gsap.set(hidden.concat(electrons), { opacity: 1, y: 0, clearProps: "transform" });
+    gsap.set(hidden, { opacity: 1, y: 0, clearProps: "transform" });
+    gsap.set(electrons, { opacity: 1 });   /* لا clearProps — يفسد توزيع الإلكترونات */
     startElectrons();
   };
 

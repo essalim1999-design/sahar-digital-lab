@@ -401,7 +401,7 @@ img { max-width: 100%; display: block; }
 
 .hero-role { margin-top: 20px; font-size: 14px; color: var(--ink); }
 .hero-note { margin-top: 10px; max-width: 44ch; font-size: var(--fs-body);
-             line-height: 2.1; color: var(--ink-soft); }
+             line-height: 2.1; color: var(--ink-soft); text-wrap: balance; }
 
 /* عزل كل سطر عن خطوط المدار خلفه */
 .hero-role span,
